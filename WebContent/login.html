@@ -1,0 +1,270 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login</title>
+	<style type="text/css">
+		body {
+			margin: 0px;
+			background-color: #4e4848;
+			color: #d3ad31;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		#main {
+			width: 600px;
+			height: 260px;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 5px;
+			padding-left: 10px;
+			margin-top: 100px;
+			border-top: 3px double #f1f1f1;
+			border-bottom: 3px double #f1f1f1;
+			padding-top: 20px;
+		}
+
+		#main table {
+			font-family: "Comic Sans MS", cursive;
+		}
+
+		/* css code for textbox */
+		#main .tb {
+			height: 28px;
+			width: 230px;
+			border: 1px solid #27a465;
+			color: #ac0b96;
+			font-weight: bold;
+			border-left: 5px solid #f7f7f7;
+			opacity: 0.9;
+		}
+
+		/* css code for button*/
+		#main .btn {
+			width: 80px;
+			height: 32px;
+			outline: none;
+			font-weight: bold;
+			border: 0px solid #27a465;
+			text-shadow: 0px 0.5px 0.5px #fff;
+			border-radius: 2px;
+			font-weight: 600;
+			color: #27a465;
+			letter-spacing: 1px;
+			font-size: 14px;
+			-webkit-transition: 1s;
+			-moz-transition: 1s;
+			transition: 1s;
+		}
+
+		#main .btn:hover {
+			background-color: #27a465;
+			outline: none;
+			border-radius: 2px;
+			color: #f1f1f1;
+			border: 1px solid #f1f1f1;
+		}
+
+		
+	</style>
+	<script>
+
+		function login() {
+			var uname = document.getElementById("email").value;
+			var pwd = document.getElementById("pwd1").value;
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			if (uname == '') {
+				alert("please enter user name.");
+			}
+			else if (pwd == '') {
+				alert("enter the password");
+			}
+			//else if (!filter.test(uname)) {
+			//	alert("Enter valid user name.");
+			//}
+			else if (pwd.length < 6) {
+				alert("Password min length is 6.");
+			}
+			
+		}
+		//Reset Inputfield code.
+		function clearFunc() {
+			document.getElementById("email").value = "";
+			document.getElementById("pwd1").value = "";
+		}
+
+	</script>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+	   integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html">College Voting System </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        </ul>
+
+        <ul class="navbar-nav mt-1">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+          </li>
+          &nbsp;
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+	<div id="main">
+	<form action="login.jsp" method="post">
+		<div class="h-tag">
+			<h2>Login</h2>
+		</div>
+		<div class="login">
+			<table cellspacing="2" align="center" cellpadding="8" border="0">
+				<tr>
+					<td colour="red">Enter User Name :</td>
+					<td><input type="text" required name="uname" placeholder="Enter user name here" id="email" class="tb"  /></td>
+				</tr>
+				<tr>
+					<td colour="red">Enter Password :</td>
+					<td><input type="password" required name="pwd" placeholder="Enter Password here" id="pwd1" class="tb" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
+						<input type="submit" value="Login" class="btn" onClick="login()" />
+					</td>
+				</tr>
+			</table>
+		</div>
+		</form>
+	</div>
+
+	 
+	
+	
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+	 
+
+</body>
+
+</html>    -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <style>
+      body {
+    background-image: url('doc.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+    </style>
+
+
+    <title>login</title>
+  </head>
+  <body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html">College Voting System </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        </ul>
+
+        <ul class="navbar-nav mt-1">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+          </li>
+          &nbsp;
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<div class="container">
+    <div class="p-5 m-5">
+    <div class="col-lg-5 mx-auto border rounded shadow-lg p-3 mb-5 bg-white rounded pt-4 pb-4 m-4">
+    <h3 align="center"> Login </h3>
+    <form class="mt-4 mb-4" action="login.jsp" method="post">
+            <!-- <div class="alert alert-danger" role="alert">
+            </div> -->
+            
+            <div class="form-group mt-3">
+              <label for="">User Name</label>
+              <input
+                required
+                type="text"
+                name="uname"
+                id=""
+                value=""
+                class="form-control"
+                placeholder="Enter User Name"
+                aria-describedby="helpId"
+              />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            
+            <div class="form-group mt-3">
+              <label for="">Password</label>
+              <input required type="Password" name="pwd" id="" class="form-control" placeholder="**********" aria-describedby="helpId">
+            </div>
+            <div class="form-group mt-3">
+              <button type="submit" class="btn btn-dark">Login</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
